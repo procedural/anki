@@ -14,7 +14,7 @@ public:
 	Error sampleExtraInit()
 	{
 		ScriptResourcePtr script;
-		ANKI_CHECK(getResourceManager().loadResource("Assets/Scene.lua", script));
+		ANKI_CHECK(getResourceManager().loadResource("C:/anki/main.lua", script));
 		ANKI_CHECK(getScriptManager().evalString(script->getSource()));
 
 		return Error::NONE;
